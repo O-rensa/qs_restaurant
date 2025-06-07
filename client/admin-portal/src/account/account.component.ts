@@ -1,4 +1,4 @@
-import { Component, Renderer2 } from '@angular/core';
+import { Component } from '@angular/core';
 import { AccountHeaderComponent } from "./layout/account-header.component";
 import { AccountFooterComponent } from './layout/account-footer.component';
 import { RouterOutlet } from '@angular/router';
@@ -17,9 +17,7 @@ import { Title } from '@angular/platform-browser';
 export class AccountComponent {
   title: string = "Admin Portal Login";
 
-  constructor(private readonly _titleService: Title,
-    private readonly _renderer: Renderer2
-  ) {
+  constructor(private readonly _titleService: Title) {
     this._titleService.setTitle(this.title);
   }
 }
