@@ -7,7 +7,8 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
         }
       },
       "root": "",
@@ -33,12 +34,10 @@
               }
             ],
             "styles": [
-              "node_modules/@coreui/coreui/dist/css/coreui.min.css",
-              "src/assets/css/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.scss"
             ],
-            "scripts": [
-              "src/assets/javascript/web-app-event/web-app-event.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
